@@ -1,0 +1,68 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: American Typewriter;
+    font-size:28px;
+    color: rgb(255, 144, 199); 
+}
+
+body {
+    padding: 1em;
+    margin: 0;
+    width:100vw;
+    height:100vh;
+    background-color: rgb(28, 26, 29);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color:rgb(28, 26, 29);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    margin:1em auto;
+    text-align: center;
+}
+#roomimage{
+    background-size:800px;
+    width: 800px;
+    max-width: 80%;
+    height:500px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    margin:0 auto;
+    background-repeat: no-repeat;
+}
+
+.arrange-horizontally > * {
+    display: inline-block;
+    text-align: center;
+}
+.arrange-vertically > * {
+    display: block;
+}
+
+
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+
+.btn {
+    background-color: rgb(28, 26, 29);
+    border: 2px solid rgb(255, 144, 199);;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(255, 144, 199);;
+    font-size:25px;
+    outline: none;
+    box-shadow: 0 0 1px 1px;
+}
+.btn:hover {
+    border-color:rgb(255, 144, 199);;
+}
